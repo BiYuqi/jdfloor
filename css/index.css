@@ -66,4 +66,21 @@
 .floor-bar li.select a{
     color: #fff;
 }
-
+@media screen and (max-width: 1080px) {
+    .header{
+        height: 100px;
+        width:100%;
+        background-color: limegreen;
+    }
+    .main-con-item{
+        height: 200px;
+        width:75%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 600px;
+        background-color: #c33;
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+}

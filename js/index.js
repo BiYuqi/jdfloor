@@ -36,7 +36,7 @@ $(function(){
             var that = this;
             var wid = this.mainCon.offset().left;
             this.floorBar.css({
-                "left":wid-50
+                "left":wid-40
             });
             //意味着数据加载完毕，在执行相应事件
             this.scrollWheel();
@@ -56,7 +56,7 @@ $(function(){
                 var lis = $('.floor-bar li');
                 var scrollTop = $(document).scrollTop();
 
-                if(scrollTop >= 200){
+                if(scrollTop >= 150){
                     that.floorBar.show();
                 }else{
                     that.floorBar.hide();
@@ -82,7 +82,7 @@ $(function(){
 
                     //大致算下速度
                     var speed = (that.mainCon.eq(k).offset().top - scrollTop)*(13/500);
-                    console.log(speed);
+                    // console.log(speed);
                     var timer = setInterval(function(){
                         scrollTop += speed;
                         if(scrollTop*speed >= that.mainCon.eq(k).offset().top*speed){
